@@ -20,8 +20,8 @@
 			<div class="form-group">
 				{{form_label(formView.name)}}
 				{{form_widget(formView.name, {'attr': {'class': 'form-control'}}) }}
-
-				{{form_errors(formView.name)}}
+			{# En commentaire car sinon le message d'erreur apparaît 2 fois #}
+				{# {{form_errors(formView.name)}} #}
 			</div>
 			{{ form_row(formView.price) }}
 		</div>
